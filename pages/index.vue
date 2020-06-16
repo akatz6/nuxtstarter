@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+
 import butterflyHeader from "@/components/butterflyHeader"
 import axios from 'axios'
 export default {
