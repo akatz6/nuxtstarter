@@ -1,55 +1,48 @@
+<!--THIS IS THE CODING FOR BUTTERFLY-HEADER.VUE-->
+
 <template>
-  <!--this component, the baseAccordian page, it is the Parent component, it will give a basic template and code for the toggles to hide or show content.-->
-  <div class="wrapper">
-    <div class="accordion" @click="toggleItem">
-<!--question goes here-->
-      <h2 class="title">
-        <slot name="title"></slot>
-      </h2>
-    </div>
-<!--answer goes here-->
-    <div v-show="show" class="content">
-      <slot name="content"></slot>
-    </div>
-  </div>
+  <!--this is the basic template for the header of the Butterfly pages-->
+<div class="header">
+<h1 class="header-title">{{title | uppercase}}</h1>
+<h2>{{message | uppercase}}</h2>
+<slot></slot>
+</div>
+
 </template>
 
+
 <script>
-//data and method to toggle the hide or show state of content.
 export default {
-  components: {},
-  data: function() {
+  data() {
     return {
-      show: false
+      title: 'Welcome to the World of Butterflies',
+      message: 'Your source for All Things Buttery that Fly'
     };
   },
-  methods: {
-    toggleItem: function() {
-      this.show = !this.show;
+
+filters: {
+ uppercase: function(value) {
+   return value.toUpperCase();
     }
   }
 };
-</script>
 
-<style scoped>
-.wrapper {
-  margin: 0 auto;
-  width: 300px;
-  padding: 10px;
-}
-.accordion {
-  display: flex;
-  cursor: pointer;
-  margin: 0;
-}
-.title {
-  margin: 0;
-  color: darkgreen;
-}
-.content {
-  text-align: left;
+</script>
+<style>
+
+.header {
+  display: block;
   width: 100%;
-  border-bottom: 1px solid black;
-  padding: 10px;
+  padding: 3%;
+  background-color: #33ff33;
+  color: white;
 }
+
+.header-title {
+  font-size: 300%;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: white;
+}
+
+
 </style>
