@@ -1,11 +1,11 @@
 <template lang="html">
-  <section class="container">
+  <section class="container" id="fan-body">
 <div class="fan-title">
   <nuxt-link to="/" class="fanlinks">Butterfly Home</nuxt-link>
     <nuxt-link to="/butterfly-zoo" class="fanlinks">Butterfly Museum</nuxt-link>
   <h1 class="butter-title">Fan Art</h1>
   <h4>Photos from butterfly Fans</h4>
-
+<br>
 <div class="wrap">
   <div class="thumbnails">
   <img v-b-tooltip.hover title="photos of the week" width="90%" v-for="(photo, index) in photos"
@@ -41,8 +41,8 @@ export default {
   },
 }
 </script>
-<style>
-.fan-title {
+<style lang="scss" scoped>
+#fan-body {
   background-color: #5c4084;
   padding: 25px;
 }

@@ -15,6 +15,7 @@
       <nuxt-link to="/" class="butterlinks">Butterfly Home</nuxt-link>
       <nuxt-link to="/butterfly-blog" class="butterlinks">Buttery Blog</nuxt-link>
        <nuxt-link to="/butterfly-faq" class="butterlinks">Butterfly FAQ</nuxt-link>
+       <nuxt-link to="/fanart">Click here to see Fan Art!</nuxt-link>
     </div>
 
    <div>
@@ -22,7 +23,7 @@
       <carousel />
     </div>
 
-<nuxt-link to="/fanart">Click here to see Fan Art!</nuxt-link>
+
    </section>
   </template>
 
