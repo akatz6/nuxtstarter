@@ -3,7 +3,7 @@
 <!--faq Page for the World of Butterflies - page 4-->
 
 <!--header stuff this slot will insert the Butterfly Header component text-->
-<butterfly-header></butterfly-header>
+<butterflyHeader></butterflyHeader>
 
 
  <!--nav bar-->
@@ -41,12 +41,12 @@
   </template>
 
 <script>
-import butterflyHeader from '@/components/butterfly-header'
+import butterflyHeader from '@/components/butterflyHeader'
 //This will connect my faq page with the accodion component - which will then connect to the baseAccordian component.
 import accordian from '@/components/accordian';
 export default {
   components: {
-      'butterfly-header': butterflyHeader,
+      'butterflyHeader': butterflyHeader,
     'accordian': accordian
   },
   data() {

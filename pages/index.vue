@@ -11,7 +11,7 @@
 
 <!--header stuff this slot will insert the Butterfly Header component text-->
 
-<butterfly-header></butterfly-header>
+<butterflyHeader></butterflyHeader>
 
  <!--nav bar - styled with pink background-->
   <div class="nav" style="background-color: #eb34e5;">
@@ -77,14 +77,14 @@
 </template>
 
 <script>
-import butterflyHeader from '@/components/butterfly-header'
+import butterflyHeader from '@/components/butterflyHeader'
 import buttonmixin from '@/components/buttonmixin'
 //import axios from 'axios'
 import card from '@/components/card'
 
 export default {
   components: {
-    'butterfly-header': butterflyHeader,
+    'butterflyHeader': butterflyHeader,
   //   'axios': axios
   //turned off axios until I get it loaded to program
             },

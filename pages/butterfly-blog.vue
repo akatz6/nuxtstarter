@@ -3,7 +3,7 @@
 <!--blog Page for the World of Butterflies - page 3-->
 
 <!--header stuff this slot will insert the Butterfly Header component text-->
-<butterfly-header></butterfly-header>
+<butterflyHeader></butterflyHeader>
 
  <!--nav bar-->
   <div class="nav" style="background-color: #eb34e5;">
@@ -22,12 +22,12 @@
   </template>
 
     <script>
-    import butterflyHeader from '@/components/butterfly-header'
+    import butterflyHeader from '@/components/butterflyHeader'
     import mrblog from '@/components/mrblog'
 
     export default {
     components: {
-    'butterfly-header': butterflyHeader,
+    'butterflyHeader': butterflyHeader,
     'mrblog': mrblog
     },
 

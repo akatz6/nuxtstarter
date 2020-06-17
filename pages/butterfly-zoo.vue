@@ -4,7 +4,7 @@
 
 
 <!--header stuff this slot will insert the Butterfly Header component text-->
-<butterfly-header></butterfly-header>
+<butterflyHeader></butterflyHeader>
 
  <!--nav bar-->
   <div class="nav" style="background-color: #eb34e5;">
@@ -27,12 +27,12 @@
   </template>
 
 <script>
-import butterflyHeader from "@/components/butterfly-header";
+import butterflyHeader from "@/components/butterflyHeader";
 import carousel from "@/components/carousel.vue";
 
 export default {
   components: {
-   'butterfly-header': butterflyHeader,
+   'butterflyHeader': butterflyHeader,
    'carousel': carousel
     },
 }
