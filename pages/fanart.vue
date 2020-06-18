@@ -8,7 +8,7 @@
 <br>
 <div class="wrap">
   <div class="thumbnails">
-  <img v-b-tooltip.hover title="photos of the week" width="90%" v-for="(photo, index) in photos"
+  <img v-b-tooltip.hover title="photos of the week" v-for="(photo, index) in photos"
   :key="index"
   :src="photo"
   @click="activePhoto = index"
@@ -98,7 +98,7 @@ h4 {
 
   img {
     width: 100%;
-    height: 100%;
+    height: 60px;
     border: 2px solid #fff;
     outline: 2px solid #fff;
     cursor: pointer;
