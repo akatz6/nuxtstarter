@@ -57,15 +57,18 @@
       </div>
 
 <!--API stuff this is the template for the API cards-->
-      <div class="wrapper">
+      <!--<div class="wrapper">
           <h1 class="heading">Names of Species</h1>
           <section class="container" v-if="insects">
             <card v-for="insect of insects"
             :key="insect.id"
-            :insect="insect"/>
+            :insect="insect"/>-->
 
            <!--name of species on biodiversity site
            https://api.gbif.org/v1/species?datasetKey=ca515b82-e301-43ff-9f69-2c0116e1c95b&sourceId=6B773CF4C72F0995A4228111BFAA28B8.taxon-->
+
+      <!--bug Guide butterfly api
+      https://api.bugguide.net/taxonomy/Lepidoptera.txt-->
 
        <!--butterfly atlas api
        https://species-ws.nbnatlas.org/species/NHMSYS0000841034.json
@@ -80,13 +83,13 @@
 import butterflyHeader from '@/components/butterflyHeader'
 import buttonmixin from '@/components/buttonmixin'
 //import axios from 'axios'
-import card from '@/components/card'
+//import card from '@/components/card'
 
 export default {
   components: {
     'butterflyHeader': butterflyHeader,
   //   'axios': axios
-  //turned off axios until I get it loaded to program
+
             },
         data() {
           return {
@@ -100,7 +103,7 @@ export default {
         },
 //will turn this back on when I load up axios
   // mounted() {
-    // axios.get('https://api.gbif.org/v1/species?datasetKey=ca515b82-e301-43ff-9f69-2c0116e1c95b&sourceId=6B773CF4C72F0995A4228111BFAA28B8.taxon')
+    // axios.get('https://api.gbif.org/v1/species')
     //  .then(response =>(this.insect = response.data))
     //   .catch( error => {
     //     this.errored = true

@@ -103,7 +103,7 @@ export default {
     top: 40%;
     width: auto;
     padding: 16px;
-    color: white;
+    color: magenta;
     font-weight: bold;
     font-size: 18px;
     transition: 0.7s ease;
