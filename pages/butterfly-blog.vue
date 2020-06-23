@@ -7,8 +7,9 @@
 
  <!--nav bar-->
   <div class="nav" style="background-color: #eb34e5;">
+    <div class="nav-brand">
     <img src="https://image.flaticon.com/icons/png/512/13/13148.png" class="butter-logo" alt="black butterfly icon">
-      <div class="nav-brand">
+
     <h3>Our Menu</h3>
   </div>
       <nuxt-link to="/" class="butterlinks">Butterfly Home</nuxt-link>
