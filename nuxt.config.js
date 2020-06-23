@@ -14,7 +14,7 @@ export default {
       { hid: 'description', name: 'description', content: 'A butterfly site for the entertainment and education of the butterfly enthusiast and lover of natural beauty.' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: 'https://www.si.edu/spotlight/buginfo/butterfly' }
+      { rel: 'icon', type: 'image/x-icon', href: 'https://cranky-brahmagupta-b68ed1.netlify.app/' }
     ]
   },
   /*
