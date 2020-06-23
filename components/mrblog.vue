@@ -8,11 +8,13 @@
 <div id="bBlog">
   <span class="blog-box" v-for="entry in blogs" :key="entry.title">
     <div v-tooltip="'Butterfly of the month'">
-      <img v-b-tooltip.hover title="Butterfly of the Month" src="https://images.unsplash.com/photo-1550103685-da83caf1f0c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" width="300" alt="brown butterfly orange flower">
+      <img v-b-tooltip.hover class="blog-pic" title="Butterfly of the Month" src="https://images.unsplash.com/photo-1550103685-da83caf1f0c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="brown butterfly orange flower">
     </div>
     <div>
       <h3 class="blog-title"> {{entry.title}} </h3>
+      <br>
       <p>{{entry.text}} </p>
+      <br>
     </div>
 </span>
 </div>
