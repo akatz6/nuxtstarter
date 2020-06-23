@@ -94,4 +94,32 @@
   font-weight: bold;
 }
 
+.blog-pic {
+  width: 300px;
+}
+
+@media only screen and (max-width: 600px) {
+  .blog-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .blog-pic {
+    width: 200px;
+  }
+
+}
+
+@media only screen and (max-width: 780px) {
+  .blog-box {
+    display: flex;
+    flex-direction: column;
+    }
+
+.blog-pic {
+  margin: auto;
+  width: 300px;
+}
+
+}
+
 </style>
